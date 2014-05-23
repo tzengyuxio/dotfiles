@@ -1,0 +1,15 @@
+#export PATH=/usr/local/bin:$PATH:/Users/tzengyuxio/bin
+#export EDITOR=/usr/bin/vim
+
+#alias synergy='/Applications/Synergy.app/Contents/MacOS/Synergy &'
+#alias linode='ssh yuxioz@106.187.54.224'
+
+#alias syncinit-3rd='svnsync init --allow-non-empty svn+ssh://yuxioz@106.187.54.224/home/svn/mocaga svn://3rd-svn.uj.com.tw/MobileCardGame'
+#alias syncinit-usb='svnsync init --allow-non-empty svn+ssh://yuxioz@106.187.54.224/home/svn/mocaga file:///Volumes/PORTABLEAPP/repos/'
+#alias syncinit-repo='svnsync init --allow-non-empty svn+ssh://yuxioz@106.187.54.224/home/svn/mocaga file:///Users/tzengyuxio/Documents/repos/'
+
+alias ssync-linode='svnsync sync --steal-lock svn+ssh://yuxioz@106.187.54.224/home/svn/mocaga'
+alias ssync-repo='svnsync sync file:///Users/tzengyuxio/Documents/repos'
+#alias ssync='svnsync sync file:///Volumes/PORTABLEAPP/repos/'
+
+eval "$(fasd --init auto)"
