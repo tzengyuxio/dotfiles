@@ -10,8 +10,21 @@
 
 alias ssync-linode='svnsync sync --steal-lock svn+ssh://yuxioz@106.187.54.224/home/svn/mocaga'
 alias ssync-repo='svnsync sync file:///Users/tzengyuxio/Documents/repos'
+alias pushserver='ssh yuxioz@218.32.59.33'
 #alias ssync='svnsync sync file:///Volumes/PORTABLEAPP/repos/'
 
+#powerline
+. ~/.powerline/powerline/bindings/bash/powerline.sh
+
+#bash-it
+. ~/.bash_it/aliases/enabled/general.aliases.bash
+
+### fasd
 eval "$(fasd --init auto)"
+#eval "$(fasd --init posix-alias bash-hook)"
 alias v='f -e vim' # quick opening files with vim
 alias m='f -e mplayer' # quick opening files with mplayer
+### z
+#. `brew --prefix`/etc/profile.d/z.sh
+### autojump
+#[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
